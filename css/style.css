@@ -18,7 +18,7 @@ div {
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 8px 20px gray;
-    background-color: rgb(81, 92, 134);
+    background-color: rgba(81, 92, 134, 0.8);
     color: white;
 }
 
