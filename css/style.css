@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-image: url("https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?cs=srgb&dl=pexels-johannes-plenio-1103970.jpg&fm=jpg");
+}
+
+div {
+    width: 30%;
+    height: auto;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    padding: 40px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 8px 20px gray;
+    background-color: rgb(81, 92, 134);
+    color: white;
+}
+
+div span {
+    font-size: 40px;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 100%;
+    font-family: "Fira Code", serif;
+}
+
+div article {
+    font-size: 30px;
+    text-align: left;
+    font-family: "Maiandra GD", serif;
+}
