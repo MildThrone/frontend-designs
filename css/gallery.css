@@ -1,0 +1,163 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    height: auto;
+    top: 0;
+    position: sticky;
+    font-size: 30px;
+    background-color: rgba(154, 158, 162, 0.85);
+    backdrop-filter: blur(10px);
+    /*backdrop-filter: opacity(90%);*/
+    padding: 10px;
+    box-shadow: 0 8px 8px -5px rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+footer {
+    text-align: center;
+    /*width: calc(100% - 40px);*/
+    width: auto;
+    background-color: red;
+    padding: 20px;
+    position: relative;
+}
+
+.container .modal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(79, 6, 6, 0.9);
+    z-index: 1;
+    visibility: hidden;
+}
+
+.container .modal .modal-content {
+    width: 70%;
+    height: 60vh;
+    /*background-color: rgba(255, 255, 255, 1);*/
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    overflow: hidden;
+    /*background-image: url("https://www.bbva.com/wp-content/uploads/2020/03/Apertura-Ninja-Proyect-BBVA-1920x1180.jpg");*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
+}
+
+.container .modal .modal-content img {
+    width: 100%;
+    height: auto;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 100%;
+        height: fit-content;
+        position: relative;
+    }
+
+    .image-grid {
+        display: grid;
+        grid-template-columns: 350px 350px 350px;
+        grid-gap: 15px 15px;
+        padding: 40px 0;
+        /*background-color: rgba(134, 40, 40, 0.6);*/
+        align-items: center;
+        justify-items: center;
+        width: fit-content;
+
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+    }
+
+    .image-grid .image {
+        width: 100%;
+        height: 350px;
+        /*border-radius: 5px;*/
+        object-fit: cover;
+        overflow: hidden;
+        background-color: black;
+    }
+
+    .image-grid .image img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .image-grid {
+        display: grid;
+        grid-template-columns: 27vw 27vw 27vw;
+        grid-gap: 20px 20px;
+        padding: 40px 0;
+        /*background-color: rgba(134, 40, 40, 0.6);*/
+        width: fit-content;
+
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+    }
+
+    .image-grid > .image {
+        background-color: black;
+        width: 100%;
+        height: 15vh;
+        /*border-radius: 5px;*/
+        overflow: hidden;
+    }
+
+    .image-grid > .image > img {
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: calc(100% - 40px);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .image-grid {
+        display: grid;
+        grid-gap: 30px 20px;
+        grid-template-columns: 100%;
+        padding: 20px;
+        background-color: rgba(231, 223, 223, 0.6);
+        align-content: center;
+    }
+
+    .image-grid > .image {
+        background-color: rgba(0, 0, 0, 1);
+        width: 100%;
+        height: 25vh;
+        border-radius: 5px;
+        overflow: hidden;
+        object-fit: cover;
+    }
+
+    .image-grid > .image > img {
+        height: auto;
+        width: 100%;
+    }
+
+    .modal .modal-content {
+        width: 90% !important;
+    }
+}
