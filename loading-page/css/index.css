@@ -1,0 +1,52 @@
+:root {
+    --dark: rgba(35, 59, 108, 0.5);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+*:focus {
+    outline: none !important;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #2d2d2d;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--dark);
+    border-radius: 5px;
+}
+
+.loader-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(5, 17, 42);
+    overflow-y: hidden;
+}
+
+svg path,
+svg rect{
+    fill: #560b81;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
