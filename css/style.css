@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(152, 169, 180, 0.85);
+}
+
+.error {
+    width: 30%;
+    height: 30vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(234, 234, 234, 0.85);
+    box-shadow: 10px 20px 8px rgba(20, 20, 20, 0.5);
+    border-radius: 5px;
+}
+
+.error-code {
+    width: 100%;
+    height: 50%;
+    top: 0;
+    border-bottom: 1px solid rgb(10, 10, 10);
+    font-size: 6em;
+    font-family: 'Style Script', cursive;
+}
+
+.error-code .zero {
+    color: rgb(86, 106, 215);
+}
+
+.error-code .four {
+    color: rgb(16, 15, 15);
+}
+
+.error .error-message {
+    font-family: 'Playfair Display', serif;
+    padding-top: 20px;
+}
+
+.error .error-message span {
+    font-size: 1.2em;
+}
+
+.error .error-message .search {
+    border: 2px solid rgb(86, 106, 215);
+    background-color: inherit;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    text-align: left;
+    width: 55%;
+    height: auto;
+    display: inline;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.error .error-message .search input {
+    border: none;
+    background-color: inherit;
+    padding: 8px 15px;
+    width: calc(100% - 70px);
+    left: 0;
+    position: relative;
+    font-family: inherit;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.error .error-message button {
+    background-color: inherit;
+    height: 100%;
+    width: 40px;
+    right: 0;
+    font-size: 1.2em;
+    position: absolute;
+    top: 0;
+    color: rgb(86, 106, 215);
+    border-left: 2px solid rgb(86, 106, 215);
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+.error .error-message button:hover {
+    background-color: rgb(86, 106, 215);
+    color: rgb(234, 234, 234);
+}
+
+.error .error-message input:focus {
+    outline: none;
+    /*border: none;*/
+}
